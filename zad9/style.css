@@ -11,6 +11,9 @@ body
     height: 100vh;
     background-image: url('images/board-bg.jpg');
     background-repeat: no-repeat;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .trailer_background 
