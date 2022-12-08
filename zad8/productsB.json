@@ -1,0 +1,61 @@
+{
+    "produkty" :
+
+    [
+        {
+            "samochody" :
+                [
+                    { "Mercedes" : "Mercedes E-klasa" },
+                    { "Audi" : "Audi A4" },
+                    { "Alfa Romeo" : "Alfa Romeo Giulia" },
+                    { "Kia" : "Kia Stinger" },
+                    { "Alfa Romeo" : "Alfa Romeo Stelvio" },
+                    { "Nissan" : "Nissan GTR" },
+                    { "Alfa Romeo" : "Alfa Romeo Giulietta" },
+                    { "Fiat" : "Fiat 500"}
+                ] 
+        },
+
+        { 
+            "napoje" :
+                [
+                    { "Pepsico" : "Lipton Ice Tea" },
+                    { "Żywiec Zdrój" : "Żywiec Zdrój Gazowana" },
+                    { "Coca-Cola" : "Coca-Cola" },
+                    { "Pepsico" : "Mirinda" },
+                    { "Pepsico" : "7UP" }
+                ] 
+        },
+
+        {
+            "elektronika" :
+                [
+                    { "Smartfon" : "Samsung A32"},
+                    { "Laptop" : "LenovoIdeaPad5" } ,
+                    { "Smartfon" : "Samsun Galaxy S22"},
+                    { "Smartfon" : "Apple Iphone 12Pro"}
+                ]
+        },
+
+        {
+            "meble" : 
+                [
+                    { "Kuchenne" : "kredens" } ,
+                    { "Salonowe" : "naroznik Agata Meble" },
+                    { "Kuchenne" : "krzesło do jadalnego stołu" },
+                    { "Salonowe" : "szafka RTV" },
+                    { "Sypialniane" : "szafka nocna" }
+                ]
+        },
+
+        {
+            "słodycze" :
+                [
+                    { "Baton" : "lion"},
+                    { "Zelki" : "smiej zelki" },
+                    { "Baton" : "Kitkat"},
+                    { "Baton" : "7bit" }
+                ]
+        }
+    ]   
+}

@@ -1,0 +1,39 @@
+{
+    "produkty" :
+    [
+        {
+            "samochody" :
+            [
+                { "Fiat" : "Fiat Panda" },
+                { "Audi" : "RS7" },
+                { "Mercedes" : "Mercedes E-klasa" },
+                { "Audi" : "Audi A4" }
+            ]
+        },
+
+        { 
+            "napoje" : 
+            [
+                { "Pepsico" : "Pepsi" } ,
+                { "Pepsico" : "MountainDew" },
+                { "Żywiec Zdrój" : "Żywiec Zdrój Gazowana" },
+                { "Coca-Cola" : "Coca-Cola" },
+                { "Żywiec Zdrój" : "Żywiec Zdrój Niegazowana" }
+            ]
+        },
+
+        { 
+            "elektronika" :
+            [
+                { "Smartfon" : "Samsung A32"},
+                { "Laptop" : "LenovoIdeaPad5" } ,
+                {"Laptop" : "Acer Aspire3" },
+                { "Laptop" : "Macbook Pro 2022" },
+                { "Smartfon" : "Apple Iphone 14Pro"},
+                { "Laptop" : "LenovoIdeaPad3" } ,
+                { "Smartfon" : "Samsun Galaxy S22"},
+                { "Smartfon" : "Apple Iphone 12Pro"}
+            ]
+        }
+    ]
+}

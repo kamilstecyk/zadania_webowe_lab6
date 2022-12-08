@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 2</title>
+    <script src="script.js" defer></script>
+    <style>
+        body
+        {
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .addresses_book
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 2rem;
+        }
+        
+        .block_styling 
+        {
+            background-color: white;
+            border: 1px solid rgba(0,0,0,0.3);
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        }
+        
+        .add_contacts_form
+        {
+            width: 60%;
+        }
+
+        .add_contacts_form form
+        {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .add_contacts_form form input 
+        {
+            margin-right: 0.5rem;
+            margin-left: 0.5rem;
+            width: 15vw;
+            height: 2vh;
+            padding: 0.5rem;
+        }
+
+        .inputs_with_labels
+        { 
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .inputs_with_labels label 
+        {
+            margin-bottom: 0.5rem;
+            color: rgba(0,0,0,0.4);
+            margin-left: 0.5rem;
+        }
+
+        #submit_add_contact
+        {
+            align-self: flex-end;
+            width: 10vw;
+            height: 4.5vh;
+            color: white;
+            background-color: lightgreen;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+        }
+
+        #submit_add_contact:hover 
+        {
+            background-color: green;
+            cursor: pointer;
+        }
+
+        .added_contacts
+        {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+
+        .added_contact
+        {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .added_contact div
+        {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .added_contact_phone h4
+        {
+            font-weight: normal;
+        }
+
+        .addded_contact_icon
+        {
+            background-color: lightgreen;
+            padding: 0.5rem;
+            margin-right: 2rem;
+        }
+        
+        .addded_contact_icon img 
+        {
+            filter: invert(100%);
+        }
+
+        .addded_contact_icon:hover 
+        {
+            background-color: green;
+            cursor: pointer;
+        }
+
+
+        @media screen and (max-width: 600px)
+        {
+                .add_contacts_form form
+            {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .add_contacts_form form input 
+            {
+               width: 75%;
+            }
+                #submit_add_contact
+            {
+                align-self: center;
+                width: 70%;
+            }
+
+                .add_contacts_form form input
+            {
+                margin-bottom: 1.5rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="addresses_book" >
+        <div class="block_styling add_contacts_form">
+            <form>
+                <div class="inputs_with_labels">
+                    <label for="name_and_surname_input" >Imię i nazwisko</label>
+                    <input type="text" id="name_and_surname_input" />
+                </div>
+                <div class="inputs_with_labels">
+                    <label for="phone_number_input">Telefon</label>
+                    <input type="text" id="phone_number_input" />
+                </div>
+                <input type="submit" id="submit_add_contact" value="Dodaj"/>
+            </form>
+        </div>
+        <div class="added_contacts" id="added_contacts_container">
+            
+        </div>
+    </div>
+</body>
+</html>

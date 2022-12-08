@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad1</title>
+    <script defer src="script.js"></script>
+    <style>
+        body 
+        {
+            background-color: lightblue;
+        }
+
+        #circle1
+        {
+            background-color: lightgray;
+            width: 400px;
+            height: 400px;        
+            border-radius: 50%;
+            position: relative;
+            left: 50%;
+            top: 0%;
+            transform: translateX(-50%);
+        }
+
+        #circle2
+        {
+            background-color: red;
+            width: 250px;
+            height: 250px;        
+            border-radius: 50%;
+            position: relative;
+            left: 50%;
+            top: 20%;
+            transform: translateX(-50%);
+        }
+        #circle3
+        {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;        
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translateX(-50%);
+        }
+
+        #circle1:hover, #circle2:hover, #circle3:hover
+        {
+            cursor: pointer;
+        }
+
+        #inputs
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+        }
+
+        #inputs button 
+        {
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 15px;
+        }
+
+        #inputs button:hover 
+        {
+            cursor: pointer;
+        }
+
+        #counter
+        {
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            width: auto;
+            text-align: center;
+            margin-left: 0.5rem;
+        }
+
+        #logs
+        {
+            position: absolute;
+            right: 0%;
+            top: 0%;
+            margin: 1rem;
+            font-size: 0.9rem;
+            border: 3px solid rgba(0,0,0,0.3);
+            padding: 0.5rem;
+            height: 90vh;
+            width: 25vw;
+            text-align: left;
+            overflow-y: auto;
+            background-color: lightgray;
+        }
+
+        #log_btn
+        {
+            margin: 0.5rem;
+            padding: 0.5rem;
+            border-radius: 15px; 
+        }
+
+        #log_btn:hover 
+        {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="counter">
+        <h1 id="counter_value">0</h1>
+        <button id="log_btn">Logs</button>
+    </div>
+    <div id="container_circle">
+        <div id="circle1">
+            <div id="circle2">
+                <div id="circle3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="logs">
+    </div>
+    <div id="inputs">
+        <button id="start_stop_propagation_btn">Stop/Start Propagation</button>
+        <button id="reset_btn">Reset</button>
+        <button id="change_sequence_btn">Change Sequence</button>
+    </div>
+</body>

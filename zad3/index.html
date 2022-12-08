@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad 3</title>
+    <script defer src="script.js"></script>
+    <style>
+
+        body 
+        {
+            background-color: lightblue;
+            margin: 0;
+            outline: 0;
+            padding: 0;
+        }
+
+        .container
+        {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .question_card
+        {
+            width: 100%;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: white;
+            margin: 1rem;
+            border: 1px solid rgba(0,0,0,0.3);
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+            border-radius: 15px;
+        }
+
+        .question
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 90%;
+        }
+
+        .question h3 
+        {
+            width: 80%;
+        }
+
+        .answer
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+        }
+        .extend_answer_icon
+        {
+            margin-left: 1rem;
+        }
+
+        .extend_answer_icon:hover
+        {
+            cursor: pointer;
+        }
+
+        .answer
+        {
+            display: none;
+        }
+
+        .active
+        {
+            display: flex;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="question_card">
+            <div class="question">
+                <h3>Wyświetl na stronie tylko miasta z województwa małopolskiego</h3>
+                <img class="extend_answer_icon" src="bxs-down-arrow.svg" alt="show answers"/>
+            </div>
+            <div class="answer">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question_card">
+            <div class="question">
+                <h3>Wyświetl miasta które w swojej nazwie posiadają dwa znaki ‘a’ </h3>
+                <img class="extend_answer_icon" src="bxs-down-arrow.svg" alt="show answers"/>
+            </div>
+            <div class="answer">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question_card">
+            <div class="question">
+                <h3>Wyświetl piąte pod kątem gęstości zaludnienia miasto w Polsce </h3>
+                <img class="extend_answer_icon" src="bxs-down-arrow.svg" alt="show answers"/>
+            </div>
+            <div class="answer">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question_card">
+            <div class="question">
+                <h3>Dla wszystkich miast powyżej 100000 dodać (na końcu) city do nazwy</h3>
+                <img class="extend_answer_icon" src="bxs-down-arrow.svg" alt="show answers"/>
+            </div>
+            <div class="answer">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question_card">
+            <div class="question">
+                <h3>Wylicz czy więcej jest miast powyżej 80000 mieszkańców czy poniżej wraz z informacją o
+                    ich liczbie. </h3>
+                <img class="extend_answer_icon" src="bxs-down-arrow.svg" alt="show answers"/>
+            </div>
+            <div class="answer">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question_card">
+            <div class="question">
+                <h3> Jaka jest średnia powierzchnia miast z powiatów zaczynających się na literkę „P”  </h3>
+                <img class="extend_answer_icon" src="bxs-down-arrow.svg" alt="show answers"/>
+            </div>
+            <div class="answer">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="question_card">
+            <div class="question">
+                <h3> Odpowiedz na pytanie czy wszystkie miasta z województwa pomorskiego są większe od
+                    5000 osób i ile jest takich miast </h3>
+                <img class="extend_answer_icon" src="bxs-down-arrow.svg" alt="show answers"/>
+            </div>
+            <div class="answer">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body 
+{
+    background-color: lightgray;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu
+{
+    width: 40%;
+    text-align: center;
+    border-right: 2px solid rgba(0,0,0,0.4);
+    min-height: 100vh;
+}
+
+main
+{
+    width: 60%;
+    text-align: center;
+}
+
+h1 
+{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.li_icons
+{
+    display: flex;
+    align-items: center;
+}
+
+.non_decorated
+{
+    list-style-type: none;
+}
+
+ul li 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+ul li img:hover
+{
+    cursor: pointer;
+}
+
+ul li input 
+{
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.li_items
+{
+    display: block;
+}
+
+.li_outer
+{
+    display: flex;
+    align-items: center;
+}
+
+.li_item_inner
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.li_item_inner div
+{
+    width: 30%;
+}
+
+.list_inner
+{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: none;
+}
+
+.li_item_inner div:nth-child(2)
+{
+    text-align: center;
+}
+
+@media screen and (max-width: 700px)
+{
+    .li_item_inner div:nth-child(1)
+    {
+       margin-right: 0.5rem;
+    }
+}
+
+.menu_item_list
+{
+    text-align: center;
+    width: 125%;
+}
+
+.opened_icon
+{
+    content: url('bxs-down-arrow.svg');
+}
+
+.active_list
+{
+    display: block;
+}

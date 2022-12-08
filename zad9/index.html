@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra Zombie</title>
+    <script defer src="arbitrary_functions.js"></script>
+    <script defer src="db_handling.js"></script>
+    <script defer src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container start_background flex_center_col" id="start_container">
+        <h1 class="start_header">ZOMBIE WALKING DEAD GAME</h1>
+        <form class="flex_center_col form_start">
+            <input class="input_styled" id="username_input" type="text" placeholder="Write down your user_name" required pattern="^(?=.{5,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$"/>
+            <button class="button_styled" id="submit_username_btn">START GAME</button>
+        </form>
+    </div>
+    <div class="container inactive" id="game_container">
+        <div class="result">
+            <h2 id="result_username">Your nick</h2>
+            <h1 id="result_title" class="red_font">0</h1>
+        </div>
+    </div>
+    <div class="container start_background flex_center_col inactive" id="end_container">
+        <h1 class="start_header">Top user's 7 results</h1>
+        <div id="load"></div>
+        <div class="user_results flex_start_col" id="users_results">
+        </div>
+        <button class="button_styled" id="start_new_game_btn">START NEW GAME</button>
+    </div>
+    <div class="container trailer_background flex_center_col inactive" id="trailer_container">
+        <h1 class="start_header">The Game Will Start After:</h1>
+        <h2 id="countdown_time_in_second">3...</h2>
+    </div>
+    <div class="cursor inactive"></div>
+    <div class="cursor2 inactive"></div>
+</body>
+</html>
