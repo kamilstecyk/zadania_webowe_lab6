@@ -1,3 +1,5 @@
+const { validate_password, show_status_of_password } = require('./auxilaryFunctions');
+
 console.log("It is working!");
 
 const new_password_input = document.getElementById('new_password_input');
@@ -48,6 +50,7 @@ hide_repeat_password_input.addEventListener('click', (e)=>
 new_password_input.addEventListener('input', (e)=>
 {
     validate_password(new_password_input.value);
+    show_status_of_password(span_8_chars_requirement, span_one_special_char_requirement, span_one_capital_letter_requirement, span_one_digit_requirement);
 });
 
 
@@ -66,74 +69,3 @@ repeat_password_input.addEventListener("keyup", function(event) {
     }
 });
 
-const validate_password = (text) => 
-{
-
-    if(!check_if_has_at_least_eight_chars(text))
-    {
-        span_8_chars_requirement.innerHTML = 'cancel';
-        span_8_chars_requirement.style.color = 'black';
-    }
-    else 
-    {
-        span_8_chars_requirement.innerHTML = 'check_circle';
-        span_8_chars_requirement.style.color = 'green';
-    }
-
-    if(!check_if_has_at_least_one_special_char(text))
-    {
-        span_one_special_char_requirement.innerHTML = 'cancel';
-        span_one_special_char_requirement.style.color = 'black';
-    }
-    else
-    {
-        span_one_special_char_requirement.innerHTML = 'check_circle';
-        span_one_special_char_requirement.style.color = 'green';
-    }
-
-    if(!check_if_has_at_lest_one_capital_letter(text))
-    {
-        span_one_capital_letter_requirement.innerHTML = 'cancel';
-        span_one_capital_letter_requirement.style.color = 'black';
-    }
-    else
-    {
-        span_one_capital_letter_requirement.innerHTML = 'check_circle';
-        span_one_capital_letter_requirement.style.color = 'green';
-    }
-
-    if(!check_if_has_at_least_one_digit(text))
-    {
-        span_one_digit_requirement.innerHTML = 'cancel';
-        span_one_digit_requirement.style.color = 'black';
-    }
-    else
-    {
-        span_one_digit_requirement.innerHTML = 'check_circle';
-        span_one_digit_requirement.style.color = 'green';
-    }
-
-};
-
-const check_if_has_at_least_eight_chars = (text) => 
-{
-    return text.length >= 8;
-};
-
-const check_if_has_at_least_one_special_char = (text) =>
-{
-    var regexp = /(?=.*[!@#$%^&*])/;
-    return regexp.test(text);
-};
-
-const check_if_has_at_lest_one_capital_letter = (text) =>
-{
-    var regexp = /(?=.*[A-Z])/;
-    return regexp.test(text);
-};
-
-const check_if_has_at_least_one_digit = (text) =>
-{
-    var regexp = /\d/;
-    return regexp.test(text);
-};

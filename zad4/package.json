@@ -1,0 +1,21 @@
+{
+  "name": "zad4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "webpack script.js --mode development --watch",
+    "test": "jest --coverage --runInBand --detectOpenHandles --forceExit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "jest": "^29.5.0",
+    "puppeteer": "^19.7.5"
+  }
+}
